@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -112,18 +114,21 @@
 .projects{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+
+
 .sub-proj{
-  width: 35%;
+  width: 28%;
   background-color: #B8DFD8;
-  margin-left: 5px;
+  /* margin-left: 5px; */
   padding: 20px;
   text-align: center;
   border-radius: 20px;
   min-height: 200px;
+  margin-top: 5px;;
 }
 
 .sub-proj h3{
@@ -131,17 +136,34 @@
   min-height: 50px;
 }
 
+.proj-text{
+  min-height: 80px;
+}
+
+.proj-sub{
+  width: 20% !important;
+  min-height: 270px;
+}
+
 .sub-proj a{
   text-decoration: none;
   background-color: #E8F6EF;
-  color: black;
+  color: blue;
   padding: 10px;
   border-radius: 25px;
+}
+
+.website-link{
+  background-color: transparent !important;
 }
 
 .sub-proj a:hover{
   box-shadow: 2px 2px 2px 2px grey;
   transition: ease-in-out 500ms;
+}
+
+.website-link:hover{
+  box-shadow: 2px 2px 2px 2px transparent !important;
 }
 
 .more{
@@ -173,13 +195,55 @@
   text-decoration: none;
 }
 
+.connect-img{
+  /* height: 10%; */
+  height: 25px;
+  margin-right: 10px;
+}
+
+.sub-connect{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-connect a{
+  text-decoration: none;
+  color: blue;
+}
+
 .footer{
   background-color: #B8DFD8;
   padding: 10px;
   text-align: center;
   margin: 10px;
+  margin-top : 15px;
   border-radius: 5px;
 }
+
+.proj-main{
+  background-color: #E8F6EF;
+  /* height: 1000vh; */
+  margin:0;
+}
+
+.topic-head{
+  display:flex;
+  /* align-items: center; */
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.topic{
+  background-color: #E8F6EF;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-style: italic;
+}
+
 @media only screen and (max-width: 550px) {
   .left {
     float: none;
@@ -213,4 +277,8 @@
     width: 80%;
   }
 
+  .proj-sub{
+    width: 80% !important;
+    min-height: auto;
+  }
 }
